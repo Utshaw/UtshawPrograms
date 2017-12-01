@@ -20,17 +20,9 @@ include "db.php";
 
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/dropdown.css" rel="stylesheet"/>
+    <link href="css/vertical.css" rel="stylesheet"/>
 
 
-    <style type="text/css">
-        .vertical-center {
-            min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-            min-height: 100vh; /* These two lines are counted as one :-)       */
-
-            display: flex;
-            align-items: center;
-        }
-    </style>
 
 </head>
 

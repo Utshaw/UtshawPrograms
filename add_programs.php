@@ -5,6 +5,7 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/dropdown.css" rel="stylesheet"/>
+    <link href="css/vertical.css" rel="stylesheet"/>
 
 
 </head>
@@ -92,9 +93,17 @@ if (isset($_POST['add_program'])) {
 ?>
 
 
+<?php include "index_header.php"; ?>
+
+<?php
+
+if(isset($_SESSION['admin_id'])){
+
+?>
 
 
-<div class="container">
+<div class="vertical-center">
+<div class="container" style="margin-top: 10px">
 
     <form action="" method="post" enctype="multipart/form-data">
 
@@ -137,7 +146,7 @@ if (isset($_POST['add_program'])) {
 
         <div class="form-group">
             <label for="cat_title">Problem Link</label>
-            <input required="" type="text" class="form-control" name="prob_link" >
+            <input required="" type="text" class="form-control" name="prob_link" placeholder="Link To Problem">
         </div>
 
 <!--        <div class="form-group">-->
@@ -161,13 +170,13 @@ if (isset($_POST['add_program'])) {
 
         <div class="form-group">
             <label for="cat_title">Cloud Path</label>
-            <input required="" type="text" class="form-control" name="cloud_path">
+            <input required="" type="text" class="form-control" name="cloud_path" placeholder="Enter GitHub repository link here">
         </div>
 
 
         <div class="form-group">
             <label for="cat_title">Tags</label>
-            <input required="" type="text" class="form-control" name="tag">
+            <input required="" type="text" class="form-control" name="tag" placeholder="Enter tags separated by commas">
         </div>
 
         <div class="form-group">
@@ -177,8 +186,14 @@ if (isset($_POST['add_program'])) {
 
     </form>
 </div>
+</div>
+
+<?php }else{  ?>
+
+    <h1 style="text-align: center;">Please Log In First</h1>
 
 
+<?php  } ?>
 </body>
 
 

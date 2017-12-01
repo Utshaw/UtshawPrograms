@@ -24,6 +24,7 @@ include "db.php";
 
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/dropdown.css" rel="stylesheet"/>
+    <link href="css/vertical.css" rel="stylesheet"/>
 
 </head>
 
@@ -109,6 +110,7 @@ include "db.php";
 
 <?php }else { ?>
 
+     <?php include "index_header.php"; ?>
      <h1 style="text-align: center;">Please Log In First</h1>
 
 <?php } ?>

@@ -7,7 +7,7 @@ if (session_status() == PHP_SESSION_NONE) {
 ?>
 
 
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+<nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -18,7 +18,7 @@ if (session_status() == PHP_SESSION_NONE) {
     <?php
     if (isset($_SESSION['admin_id'])){
     ?>
-    <a class="navbar-brand" href="#" style="text-align: right"><?php echo $_SESSION['admin_name']; ?></a>
+    <a class="navbar-brand" href="index.php" style="text-align: right"><?php echo $_SESSION['admin_name']; ?></a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -44,7 +44,7 @@ if (session_status() == PHP_SESSION_NONE) {
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item active">
-                    <a href="login.php" style="text-align: right">Sign In</a>
+                    <a class="nav-link" href="login.php" style="text-align: right">Sign In</a>
                 </li>
             </ul>
 
