@@ -26,7 +26,7 @@
 
         </ul>
 
-        <form action="show_programs.php" method="post" class="form-inline my-2 my-lg-0">
+        <form action="show_programs.php" method="get" class="form-inline my-2 my-lg-0">
 
 
             <div class="b-select-wrap">

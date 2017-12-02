@@ -62,11 +62,11 @@ include "db.php";
     <div class="row">
 
         <div class="container">
-            <h1 style="text-align: center"><a href="https://github.com/Utshaw">Utshaw</a>'s Program Search</h1>
+            <h1 style="text-align: center"><a href="https://github.com/Utshaw" target="_blank">Utshaw</a>'s Program Search</h1>
         </div>
 
         <div class="container">
-            <form action="show_programs.php" method="post">
+            <form action="show_programs.php" method="get">
                 <div class="form-group">
                     <label for="exampleInputEmail1" style="font-weight: bold">Search Here</label>
                     <input type="search" name="search_tag" class="form-control" placeholder="Search">

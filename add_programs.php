@@ -1,7 +1,7 @@
 <?php include "db.php"; ?>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Add Program</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/dropdown.css" rel="stylesheet"/>
